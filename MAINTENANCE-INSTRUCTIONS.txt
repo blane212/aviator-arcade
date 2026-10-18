@@ -1,0 +1,15 @@
+AVIATOR ARCADE — MAINTENANCE MODE
+
+NORMAL: Keep index.html as the app. maintenance.html and 404.html can stay in the GitHub repository permanently.
+
+TO TURN MAINTENANCE ON:
+1. Save a backup of the existing index.html.
+2. In GitHub, rename existing index.html to index-app-backup.html (or save it outside the repo).
+3. Rename index-maintenance.html to index.html, commit.
+4. Wait for GitHub Pages to deploy. Visitors will see maintenance mode.
+
+TO TURN MAINTENANCE OFF:
+1. Replace the maintenance index.html with the saved app index.html (or latest release index.html).
+2. Commit and wait for deployment.
+
+IMPORTANT: Deleting the entire repo or all site files will not show a custom maintenance screen. 404.html is only a fallback for missing URLs, not a guaranteed homepage. GitHub Pages has deployment delay and browsers may cache pages. This is a manual toggle, not an automatic detector.
